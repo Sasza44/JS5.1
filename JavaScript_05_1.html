@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Java Script Lesson 5</title>
+    
+    </head>
+    <body>
+        <script>
+            "use strict";
+            let document1 = {
+                header: "Заголовок",
+                body: "Тело",
+                footer: "Футер",
+                data: "Дата",
+                addition: {
+                    header: "Заголовок",
+                    body: "Тело",
+                    footer: "Футер",
+                    data: "Дата",
+                },
+                showDocument(){
+                    console.log(`${this.header}, ${this.body}, ${this.footer}, ${this.data}, Приложение: ${this.addition.header}, ${this.addition.body}, ${this.addition.footer}, ${this.addition.data}`);
+                }
+            }
+            document1.showDocument();
+        </script>  
+    </body>
